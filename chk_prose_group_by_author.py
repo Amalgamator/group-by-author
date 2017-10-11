@@ -3,11 +3,9 @@ import sys
 
 rootdir = '/path_to_txt_files/'
 
-
 def averageLen(words):
 	lengths = [len(i) for i in words]
 	return 0 if len(lengths) == 0 else (float(sum(lengths)) / len(lengths))
-
 
 i = 0
 for file in os.listdir(rootdir):
